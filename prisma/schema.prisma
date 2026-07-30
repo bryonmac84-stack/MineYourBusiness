@@ -1,0 +1,41 @@
+// Prisma schema
+// Uses SQLite for local development. Switch to Postgres by updating provider and DATABASE_URL.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  role      String   @default("client")
+  createdAt DateTime @default(now())
+  listings  Listing[]
+  bookings  Booking[]
+}
+
+model Listing {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  priceCents  Int
+  ownerId     String
+  owner       User     @relation(fields: [ownerId], references: [id])
+  createdAt   DateTime @default(now())
+}
+
+model Booking {
+  id         String   @id @default(cuid())
+  listingId  String
+  listing    Listing  @relation(fields: [listingId], references: [id])
+  clientId   String
+  client     User     @relation(fields: [clientId], references: [id])
+  status     String   @default("requested")
+  createdAt  DateTime @default(now())
+}
