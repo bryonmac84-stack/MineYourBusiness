@@ -1,0 +1,11 @@
+# Gitpod configuration for MineYourBusiness
+
+image: gitpod/workspace-full:latest
+
+tasks:
+  - init: npm ci
+    command: npm run dev
+
+ports:
+  - port: 3000
+    onOpen: open-preview

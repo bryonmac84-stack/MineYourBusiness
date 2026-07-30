@@ -1,0 +1,17 @@
+{
+  "name": "MineYourBusiness Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:18",
+  "features": {},
+  "postCreateCommand": "npm ci && npx prisma generate",
+  "forwardPorts": [3000],
+  "remoteUser": "node",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
