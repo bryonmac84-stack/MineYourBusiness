@@ -3,6 +3,7 @@
   "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:18",
   "features": {},
   "postCreateCommand": "npm ci && npx prisma generate",
+  "postStartCommand": "npm run dev:lan",
   "forwardPorts": [3000],
   "remoteUser": "node",
   "customizations": {
