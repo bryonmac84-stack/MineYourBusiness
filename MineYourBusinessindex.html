@@ -1,0 +1,288 @@
+Here is a complete, ready-to-publish, single-page website for MiNe Your Business Hub. It is designed as a modern, responsive landing page tailored for corporate and trade clients, featuring sections for NFC technology and Point-of-Sale (POS) integration.
+You can save the code below as an index.html file and drop it into your repository's autostart branch.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MiNe Your Business Hub - Seamless NFC Technology & Point-of-Sale Integration for Trades and Corporations.">
+    <title>MiNe Your Business Hub</title>
+    <style>
+        /* Base Styles & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #0b2545;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #4cc9f0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4cc9f0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0b2545 0%, #133c7a 100%);
+            color: #fff;
+            padding: 6rem 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #e0e0e0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #4cc9f0;
+            color: #0b2545;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #3ab0d3;
+            transform: translateY(-2px);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 5%;
+            background-color: #fff;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            color: #0b2545;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #4cc9f0;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #0b2545;
+        }
+
+        /* Integration Section (POS & NFC focus) */
+        .integration {
+            padding: 5rem 5%;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .integration-content {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+        }
+
+        .integration-content h2 {
+            font-size: 2.2rem;
+            color: #0b2545;
+            margin-bottom: 1.5rem;
+        }
+
+        .integration-content ul {
+            list-style-type: none;
+            margin-top: 1.5rem;
+        }
+
+        .integration-content li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .integration-content li::before {
+            content: '✓';
+            color: #4cc9f0;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0b2545;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: auto;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none; /* In a full build, add a hamburger menu here */
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .integration {
+                flex-direction: column;
+                text-align: center;
+            }
+            .integration-content li {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">MiNe Your Business</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to MiNe Your Business Hub</h1>
+        <p>Empowering trades and corporations with next-generation networking and transactional technology.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="solutions" class="features">
+        <h2 class="section-title">Corporate & Trade Solutions</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Smart NFC Technology</h3>
+                <p>Instantly share your business profile, portfolio, and contact information with a simple tap using our custom NFC tools.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💳</div>
+                <h3>Seamless POS Integration</h3>
+                <p>Connect your networking efforts directly to your sales pipeline with our integrated point-of-sale systems built for modern businesses.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Enterprise Scalability</h3>
+                <p>Designed for independent tradesmen and large corporations alike, scaling effortlessly as your business grows.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive Integration Section -->
+    <section id="technology" class="integration">
+        <div class="integration-content">
+            <h2>Bridge the Gap Between Connection and Conversion</h2>
+            <p>At MiNe Your Business Hub, we believe a handshake should be the beginning of a streamlined workflow. Our hardware and software ecosystem is built for efficiency.</p>
+            <ul>
+                <li><strong>NFC Business Cards & Tags:</strong> Zero-friction networking without apps.</li>
+                <li><strong>Dynamic Profiles:</strong> Update your information in real-time.</li>
+                <li><strong>Secure Transactions:</strong> Encrypted POS data flow.</li>
+                <li><strong>Trade-Specific Tools:</strong> Tailored environments for contractors, service providers, and agencies.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h2>Ready to optimize your workflow?</h2>
+        <p style="margin: 1rem 0 2rem 0; color: #fff;">Connect with us today to build your custom NFC and POS architecture.</p>
+        <a href="mailto:contact@mineyourbusiness.com" class="cta-button" style="margin-bottom: 2rem;">Contact Sales</a>
+        <p>&copy; 2026 MiNe Your Business Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
