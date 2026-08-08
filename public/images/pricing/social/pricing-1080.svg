@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title">
+  <title id="title">Pricing social image - Essential vs Growth</title>
+  <defs>
+    <linearGradient id="cardG1" x1="0" x2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="cardG2" x1="0" x2="1">
+      <stop offset="0" stop-color="#052e11"/>
+      <stop offset="1" stop-color="#0b3b24"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="#071022"/>
+  <!-- Top badges / logos -->
+  <text x="80" y="120" font-family="Inter, Arial, sans-serif" font-size="28" fill="#a6b0bd" font-weight="600">Used by 2,000+ freelancers</text>
+
+  <!-- Cards container -->
+  <g transform="translate(80,180)">
+    <!-- Essential card -->
+    <rect x="0" y="0" rx="18" width="420" height="640" fill="url(#cardG1)" opacity="0.95"/>
+    <text x="24" y="56" font-family="Inter, Arial, sans-serif" font-size="22" fill="#9fb6c8" font-weight="700">Essential</text>
+    <text x="24" y="110" font-family="Inter, Arial, sans-serif" font-size="48" fill="#ffd580" font-weight="800">$5<span font-size="18">/mo</span></text>
+    <text x="24" y="160" font-family="Inter, Arial, sans-serif" font-size="14" fill="#b7c3cc">Up to 10 booking requests • 1 service</text>
+
+    <!-- Growth card -->
+    <rect x="480" y="-20" rx="18" width="420" height="680" fill="url(#cardG2)" opacity="1"/>
+    <rect x="480" y="-20" rx="18" width="420" height="80" fill="#ffd96b" opacity="0.95"/>
+    <text x="500" y="30" font-family="Inter, Arial, sans-serif" font-size="14" fill="#071022" font-weight="700">Most Popular</text>
+    <text x="500" y="80" font-family="Inter, Arial, sans-serif" font-size="22" fill="#bfe8c7" font-weight="700">Growth</text>
+    <text x="500" y="134" font-family="Inter, Arial, sans-serif" font-size="48" fill="#eaffeb" font-weight="800">$19.99<span font-size="18">/mo</span></text>
+    <text x="500" y="188" font-family="Inter, Arial, sans-serif" font-size="14" fill="#cfe9d7">Unlimited bookings • Priority listings • 10% discounts</text>
+
+    <!-- CTA badges -->
+    <rect x="500" y="230" rx="10" width="320" height="56" fill="#ffd96b"/>
+    <text x="660" y="266" font-family="Inter, Arial, sans-serif" font-size="16" fill="#071022" font-weight="800" text-anchor="middle">Start Growth — 7-day free trial</text>
+
+    <rect x="24" y="520" rx="10" width="320" height="46" fill="transparent" stroke="#6b8596"/>
+    <text x="184" y="552" font-family="Inter, Arial, sans-serif" font-size="15" fill="#9fb6c8" font-weight="700" text-anchor="middle">Get Essential — $5/mo</text>
+  </g>
+
+  <!-- Footer microcopy -->
+  <text x="80" y="980" font-family="Inter, Arial, sans-serif" font-size="14" fill="#9fb6c8">Cancel anytime • No setup fees • First month free for first 100 signups</text>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="600" viewBox="0 0 1600 600" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title">
+  <title id="title">Parallax layer 1 - soft gradient blob</title>
+  <defs>
+    <linearGradient id="lg1" x1="0" x2="1">
+      <stop offset="0" stop-color="#1e3a8a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#0ea5a4" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M0 200 C200 50, 400 350, 800 250 C1200 150, 1400 400, 1600 300 L1600 600 L0 600 Z" fill="url(#lg1)" opacity="0.85"/>
+  </g>
+</svg>

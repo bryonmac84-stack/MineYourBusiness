@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220" height="64" viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title">
+  <title id="title">Most Popular ribbon</title>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#FFB84D"/>
+      <stop offset="1" stop-color="#FFD96B"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect x="0" y="8" width="220" height="40" rx="8" fill="url(#g)"/>
+    <path d="M8 8 L0 20 L8 32" fill="#F6C86A"/>
+    <path d="M212 8 L220 20 L212 32" fill="#F6C86A"/>
+    <text x="110" y="32" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#111">Most Popular</text>
+  </g>
+</svg>

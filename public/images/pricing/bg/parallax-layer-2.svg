@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title">
+  <title id="title">Parallax layer 2 - accent shapes</title>
+  <defs>
+    <linearGradient id="lg2" x1="0" x2="1">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <ellipse cx="200" cy="120" rx="220" ry="80" fill="url(#lg2)" opacity="0.9"/>
+    <ellipse cx="900" cy="320" rx="300" ry="120" fill="url(#lg2)" opacity="0.6"/>
+  </g>
+</svg>
